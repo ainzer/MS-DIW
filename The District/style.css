@@ -1,22 +1,107 @@
-.color{
-    background-color: #970747 !important;
-}
-.color-btn{
+.color {
+    background: #970747 !important;
+  }
+  
+  .custom-rounded {
+    border-radius: 25px !important;
+  }
+  
+  .col-btn {
+    color: white;
+    background-color: white;
+    border-color: white;
+    border-radius: 0 25px;
+    border-width: 5px;
+  }
+  
+  .color-search {
     background-color: #FEF4E8 !important;
-    border-color: black !important;
     color: #970747 !important;
-    border-width: 3px !important;
-}
-.color-text{
-    color: #FEF4E8 !important;
-}
-.color-text:hover{
+    border-color: black !important;
+    border-width: 3px;
+  }
+  
+  .color-search:hover {
     background-color: #970747 !important;
-}
-.col-btn{
-    border-color: #FEF4E8!important;
-    border-width: 3px !important;
-}
-h1{
-    font-weight: 550 !important;
-}
+    color: #FEF4E8 !important;
+    border-color: #FEF4E8 !important;
+  }
+  
+  .custom-heading {
+    color: #FEF4E8 !important;
+    background-color: #970747 !important;
+    background: #970747 !important;
+    border-color: #970747 !important;
+  }
+
+  .couleur-navigation {
+    background-color: #970747 !important;
+    background: #970747 !important;
+    border-color: #970747 !important;
+    color: #970747 !important;
+    border-radius: 25px;
+  }
+  
+  .logo {
+    width: 125px;
+    border-radius: 25px;
+  }
+  
+  .links {
+    list-style: none;
+    display: flex;
+    margin-left: 25%;
+  }
+  
+  .links li {
+    margin-left: 10px;
+  
+  }
+  
+  .links li:first-child {
+    margin-left: 0;
+  }
+  
+  body {
+    background-color: #FEF4E8;
+    /*font-family: Arial, sans-serif;*/
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .parallax-bg {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Styles pour la version mobile */
+  @media (max-width: 768px) {
+    .logo {
+      width: 75px;
+      border-radius: 15px;
+    }
+  
+    .links {
+      list-style: none;
+      display: flex;
+      margin-left: 15%;
+      /* Déplace les liens à droite */
+    }
+  
+    .links li {
+      margin-left: 5px;
+      /* Espacement entre les liens */
+    }
+  
+    .links li:first-child {
+      margin-left: 0px;
+      /* Supprime l'espacement pour le premier lien */
+    }
+  }
