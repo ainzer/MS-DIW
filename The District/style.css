@@ -7,9 +7,9 @@
   }
   
   .col-btn {
-    color: white;
-    background-color: white;
-    border-color: white;
+    color: #FEF4E8;
+    background-color: #FEF4E8;
+    border-color: #FEF4E8;
     border-radius: 0 25px;
     border-width: 5px;
   }
@@ -17,14 +17,14 @@
   .color-search {
     background-color: #FEF4E8 !important;
     color: #970747 !important;
-    border-color: black !important;
+    border-color: #000000 !important;
     border-width: 3px;
   }
   
   .color-search:hover {
     background-color: #970747 !important;
     color: #FEF4E8 !important;
-    border-color: #FEF4E8 !important;
+    border-color: #000000 !important;
   }
   
   .custom-heading {
@@ -33,13 +33,44 @@
     background: #970747 !important;
     border-color: #970747 !important;
   }
-
-  .couleur-navigation {
+  
+  .custom-heading:hover {
+    background-color: #FEF4E8 !important;
+    color: #970747 !important;
+    border-color: #000000 !important;
+    border-width: 3px;
+  }
+  
+  .couleur-navigation-text {
     background-color: #970747 !important;
+    background: #970747 !important;
+    border-color: #970747 !important;
+    color: #FEF4E8 !important;
+    border-radius: 25px;
+  }
+  
+  .couleur-navigation {
+    background-color: #FEF4E8 !important;
     background: #970747 !important;
     border-color: #970747 !important;
     color: #970747 !important;
     border-radius: 25px;
+  }
+  
+  .carousel-item img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .couleurtitre {
+    color: #FEF4E8 !important;
+  }
+  
+  .couleurslogan {
+    color: #FEF4E8 !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
   }
   
   .logo {
@@ -63,8 +94,9 @@
   }
   
   body {
-    background-color: #FEF4E8;
+    /*background-color: #FEF4E8;*/
     /*font-family: Arial, sans-serif;*/
+    background-color: #FEF4E8;
     margin: 0;
     padding: 0;
     background-attachment: fixed;
@@ -81,8 +113,46 @@
     background-size: cover;
   }
   
+  .modification-btn {
+    background-color:#FEF4E8;
+    color: #970747;
+    padding: 8px 16px;
+    border-color: #000000;
+    border-width: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modification-btn:hover {
+    background-color: #970747;
+    color: #FEF4E8;
+  }
+  
+  .modification-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .modification-btn:active {
+    background-color: #970747;
+  }
+  
   /* Styles pour la version mobile */
   @media (max-width: 768px) {
+    .img-cat {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+    }
+  
+    .img-cat img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
     .logo {
       width: 75px;
       border-radius: 15px;
