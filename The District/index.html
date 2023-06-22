@@ -18,13 +18,14 @@
 </head>
 
 <body>
+  <div class="para-bg">
     <header><!--Début du header pour la partie Layout(entete) -->
       <nav class="color navbar navbar-expand-lg bg-danger rounded custom-rounded "><!--Début de la NavBar Bootstrap-->
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img class="logo" src="/images_the_district/the_district_brand/logo.png"
               alt="logo" title="logo"></a>
-          <ul class="col-3 nav-link couleurtitre fs-1"><u><b>The District</b></u></ul>
-          <button class="navbar-toggler col-btn" type="button" data-bs-toggle="collapse"
+          <ul class="col-3 nav-link col-title fs-1"><u><b>The District</b></u></ul>
+          <button class="navbar-toggler color-btn" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon text-primary"></span>
@@ -62,7 +63,7 @@
             <ul class="ml-auto">
               <form class="d-flex justify-content-right align-items-center " role="search">
                 <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
-                <button class="btn btn-outline-success color-search" type="submit">Rechercher</button>
+                <button class="btn btn-outline-success col-search" type="submit">Rechercher</button>
               </form>
             </ul>
 
@@ -71,7 +72,7 @@
       </nav><!--Fin de la NavBar-->
     </header><!--Fin du header pour la partie Layout(entete) -->
     <br>
-    <div class="d-flex justify-content-center couleur-navigation"><!--Début de la partie Carousel-->
+    <div class="d-flex justify-content-center col-nav"><!--Début de la partie Carousel-->
       <div class="row">
         <div class="col">
           <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -94,14 +95,14 @@
       </div>
     </div><!--Fin de la partie Carousel-->
     <br>
-    <button class="navbar-toggler col-btn" type="button" data-bs-toggle="collapse"
+    <button class="navbar-toggler color-btn" type="button" data-bs-toggle="collapse"
       data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
       aria-label="Toggle navigation">
       <span class="navbar-toggler-icon text-primary"></span>
     </button>
-    <div class="d-flex justify-content-center align-items-center couleur-navigation carousel-item">
+    <div class="d-flex justify-content-center align-items-center col-nav carousel-item">
       <!--Corps de la page avec le slogan ainsi que quelques images-->
-      <ul class="nav-link couleurslogan "><u class="fs-1"><b>Large choix sur vos produits ! </b></u>
+      <ul class="nav-link colslog "><u class="fs-1"><b>Large choix sur vos produits ! </b></u>
         <p class="fs-4">Bienvenue dans l'ère culinaire de The District : une fusion exquise de
           saveurs rapides et de satisfaction gourmande, où chaque bouchée vous transporte vers un monde de délices.</p>
       </ul>
@@ -111,12 +112,13 @@
           style="width:250px;height:250px;"></a>
     </div><!--Corps de la page avec le slogan ainsi que quelques images-->
     <br>
+  </div>
 </body>
 <foot>
   <nav>
     <div class="d-flex justify-content-end align-items-center">
       <a id="arrow-up" class="me-5">
-        <i class="fa-solid fa-arrow-up fa-fade fa-2xl"
+        <i class="fa-solid fa-arrow-up fa-beat fa-2xl"
           style="color: #970747;"></i><!--Flêche à droite permettant de remonter en haut de la page-->
       </a>
     </div>
@@ -130,8 +132,8 @@
       });
     });
   </script>
-   <!--fin de la partie Script pour la flêche-->
-   <div class="d-flex justify-content-center align-items-center">
+  <!--fin de la partie Script pour la flêche-->
+  <div class="d-flex justify-content-center align-items-center">
     <!--Début de la partie Réseaux Sociaux-->
     <a class="mx-5"><i class="fa-brands fa-instagram fa-fade" style="color: #970747;font-size: 100px;"></i></a>
     <a class="mx-5"><i class="fa-brands fa-pinterest fa-fade" style="color: #970747;font-size:100px;"></i></a>
@@ -139,8 +141,7 @@
     <a class="mx-5"><i class="fa-brands fa-linkedin fa-fade" style="color: #970747;font-size:100px;"></i></a>
     <a class="mx-5"><i class="fa-brands fa-facebook fa-fade" style="color: #970747;font-size: 100px;"></i></a>
     <a class="mx-5"><i class="fa-brands fa-youtube fa-fade" style="color: #970747;font-size:100px"></i></a>
-   </div>
-  </footer>
+  </div><!--Fin de la partie Réseaux Sociaux-->
 </foot>
 
 </html>
