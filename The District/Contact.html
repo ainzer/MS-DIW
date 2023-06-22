@@ -46,18 +46,6 @@
               <a class="nav-link dropdown-toggle custom-heading active fs-1" href="#" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">Plats</a>
               <ul class="dropdown-menu custom-heading" aria-labelledby="menudropdown">
-                <li><a class="dropdown-item custom-heading active fs-2" href="#">Asiatiques</a></li>
-                <li><a class="dropdown-item custom-heading active fs-2" href="#">Burgers</a></li>
-                <li><a class="dropdown-item custom-heading active fs-2" href="#">Pâtes</a></li>
-                <li><a class="dropdown-item custom-heading active fs-2" href="#">Pizzas</a></li>
-                <li><a class="dropdown-item custom-heading active fs-2" href="#">Salades</a></li>
-                <li><a class="dropdown-item custom-heading active fs-2" href="#">Sandwichs</a></li>
-                <li><a class="dropdown-item custom-heading active fs-2" href="#">Veggies</a></li>
-                <li><a class="dropdown-item custom-heading active fs-2" href="#">Wraps</a></li>
-                <li><a class="dropdown-item custom-heading active fs-2" href="#">Kebabs</a></li>
-                <li><a class="dropdown-item custom-heading active fs-2" href="#">Libanais</a></li>
-                <li><a class="dropdown-item custom-heading active fs-2" href="#">Paininis</a></li>
-                <li><a class="dropdown-item custom-heading active fs-2" href="#">Tacos</a></li>
               </ul>
             </li>
           </ul>
@@ -71,98 +59,53 @@
       </div>
     </nav><!--Fin de la NavBar-->
   </header><!--Fin du header pour la partie Layout(entete) -->
-  <br><br>
-  <div class="d-flex flex-column justify-content-center align-items-center col-nav-text text-center">
-    <!--Formulaire de contact-->
-    <div class="d-flex col-nav-text justify-content-center fs-1 my-4 mx-5">
-      <h1 class="mx-2"><b>Contact</b></h1>
-    </div>
-    <div class="d-flex col-nav-text justify-content-center fs-5 mx-2">
-      <p><i><small>* Ces zones sont obligatoires</small></i></p>
-    </div>
-    <form method="post" action="formulaire.php" onsubmit="return validerFormulaire();"
-      oninvalid="alert('Veuillez entrer les champs demandés (Obligatoire!)');">
-      <div class="mx-2"><b>Vos coordonées</b></div>
-      <div class="mt-2">
-        <div class="mx-2">
-          <label for="nom"><b>Votre nom* :</b></label><br>
-          <input type="text" id="nom" name="nom" required>
-        </div>
+  <br>
+  <div class="container mt-5">
+    <h1>Formulaire de contact</h1>
+    <form id="contactForm">
+      <div class="mb-3">
+        <label for="nom" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom">
       </div>
-      <div class="mt-2">
-        <div class="mx-2">
-          <label for="prenom"><b>Votre prénom* :</b></label><br>
-          <input type="text" id="prenom" name="prenom" required>
-        </div>
+      <div class="mb-3">
+        <label for="prenom" class="form-label">Prénom</label>
+        <input type="text" class="form-control" id="prenom" placeholder="Entrez votre prénom">
       </div>
-      <div class="mt-2">
-        <div class="mx-2">
-          <label for="telephone"><b>Téléphone* :</b></label><br>
-          <input type="text" id="telephone" name="telephone" required>
-        </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Entrez votre email">
       </div>
-      <div class="mt-2">
-        <div class="mx-2  my-1">
-          <label for="email"><b>Email*:</b></label><br>
-          <input type="email" id="email" placeholder="totodutoto@mail.fr" name="email" required>
-        </div>
+      <div class="mb-3">
+        <label for="telephone" class="form-label">Téléphone</label>
+        <input type="text" class="form-control" id="telephone" placeholder="Entrez votre numéro de téléphone">
       </div>
-      <div class="mt-2">
-        <fieldset class="mx-2">
-          <div class="mx-2">
-            <label for="question"><b>Votre Demande :</b></label><br>
-            <textarea id="question" name="question"></textarea>
-          </div>
-          <p></p>
-        </fieldset>
+      <div class="mb-3">
+        <label for="demande" class="form-label">Votre demande</label>
+        <textarea class="form-control" id="demande" rows="5" placeholder="Entrez votre demande"></textarea>
       </div>
-      <p><input type="checkbox" required class="mx-2"><b>* J'accepte le traitement informatique de ce formulaire</b></p>
-      <div class="d-flex justify-content-center mx-4 mt-2 my-2">
-        <input type="submit" value="Envoyer" class="mod-btn mx-2">
-        <button type="button" onclick="resetForm()" class="mod-btn">Effacer</button>
-      </div>
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+      <button type="button" class="btn btn-secondary" onclick="resetForm()">Effacer</button>
     </form>
-  </div><!--Fin du formulaire de contact-->
-
+  </div>
   <script>//Fonction en JS permettant l'obligation à l'utilisateur d'entre toutes les coordonnées demandé sur la page
-    function validerFormulaire() {
-      const nom = document.getElementById("nom").value;
-      const prenom = document.getElementById("prenom").value;
-      const telephone = document.getElementById("telephone").value;
-      const email = document.getElementById("email").value;
-      const regexEmail = /\S+@\S+\.\S+/;
-      const regexNumero = /^\d{10}$/;
+  function validateForm() {
+    var nom = document.getElementById("nom").value;
+    var prenom = document.getElementById("prenom").value;
+    var email = document.getElementById("email").value;
+    var telephone = document.getElementById("telephone").value;
+    var demande = document.getElementById("demande").value;
 
-      if (nom.trim() === "") {
-        alert("Veuillez marquer votre nom de famille (obligatoire!)");
-        return false;
-      }
-
-      if (prenom.trim() === "") {
-        alert("Veuillez marquer votre prénom (obligatoire!)");
-        return false;
-      }
-
-      if (!regexNumero.test(telephone)) {
-        alert("Le numéro de téléphone doit comporter exactement 10 chiffres (obligatoire!)");
-        return false;
-      }
-
-      if (!regexEmail.test(email)) {
-        alert("L'e-mail doit comporter au moins le caractère @ (obligatoire!)");
-        return false;
-      }
-
-      return true;
+    if (nom === "" || prenom === "" || email === "" || telephone === "" || demande === "") {
+      alert("Veuillez remplir tous les champs du formulaire.");
+      return false;
     }
 
-    function resetForm() {//Fonction permettant de remettre le formulaire de contact vierge
-      document.getElementById("nom").value = "";
-      document.getElementById("prenom").value = "";
-      document.getElementById("telephone").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("question").value = "";
-    }
+    return true;
+  }
+
+  function resetForm() {
+    document.getElementById("contactForm").reset();
+  }
   </script><!--Fin de la fonction JS-->
   <!-- SB Forms JS -->
 </body>
