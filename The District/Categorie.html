@@ -18,6 +18,7 @@
 </head>
 
 <body>
+  <div class="para-bg">
   <header><!--Début du header pour la partie Layout(entete) -->
     <nav class="color navbar navbar-expand-lg bg-danger rounded custom-rounded "><!--Début de la NavBar Bootstrap-->
       <div class="container-fluid">
@@ -57,122 +58,22 @@
       </div>
     </nav><!--Fin de la NavBar-->
   </header><!--Fin du header pour la partie Layout(entete) -->
-  <br>
-  <div class="d-flex justify-content-center col-nav">
-    <!--Début de la partie affichage des catégorie Image+Titre-->
-    <div class="container   text-center">
-      <div class="row d-flex justify-content-center fs-1 text-center ">
-        <p class="colslog"><strong>Un large choix sur nos plats !</strong></p>
-      </div>
-      <div class="row">
-        <div class="img-cat col-md-4 mb-4 ">
-          <img src="/images_the_district/category/asian_food_cat.jpg" class="d-block" alt="..."
-            style="width:250px;height:250px;">
-          <h4 class="colslog">Asiatiques</h4>
-        </div>
-        <div class="img-cat col-md-4 mb-4 ">
-          <img src="/images_the_district/category/burger_cat.jpg" class="d-block" alt="..."
-            style="width:250px;height:250px;">
-          <h4 class="colslog">Burgers</h4>
-        </div>
-        <div class="img-cat  col-md-4 mb-4">
-          <img src="/images_the_district/category/pasta_cat.jpg" class="d-block" alt="..."
-            style="width:250px;height:250px;">
-          <h4 class="colslog">Pâtes</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="img-cat col-md-4 mb-4">
-          <img src="/images_the_district/category/pizza_cat.jpg" class="d-block" alt="..."
-            style="width:250px;height:250px;">
-          <h4 class="colslog">Pizzas</h4>
-        </div>
-        <div class="img-cat col-md-4 mb-4">
-          <img src="/images_the_district/category/salade_cat.jpg" class="d-block" alt="..."
-            style="width:250px;height:250px;">
-          <h4 class="colslog">Salades</h4>
-        </div>
-        <div class="img-cat col-md-4 mb-4">
-          <img src="/images_the_district/category/sandwich_cat.jpg" class="d-block" alt="..."
-            style="width:250px;height:250px;">
-          <h4 class="colslog">Sandwichs</h4>
-        </div>
-      </div>
-      <div class="row d-none" id="secondRow">
-        <div class="img-cat col-md-4 mb-4">
-          <img src="/images_the_district/category/veggie_cat.jpg" class="d-block" alt="..."
-            style="width:250px;height:250px;">
-          <h4 class="colslog">Veggies</h4>
-        </div>
-        <div class="img-cat col-md-4 mb-4">
-          <img src="/images_the_district/category/wrap_cat.jpg" class="d-block" alt="..."
-            style="width:250px;height:250px;">
-          <h4 class="colslog">Wraps</h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="img-cat col-12 text-center">
-          <button id="loadMoreBtn" class="btn btn-primary">Afficher plus</button>
-          <button id="showLessBtn" class="btn btn-secondary d-none">Afficher moins</button>
-        </div>
-      </div>
-    </div>
-  </div><!--Fin de la partie affichage des catégorie Image+Titre-->
-  <script>//Partie Script en Java Script permettant d'afficher plus ou moins selon la demande l'utilisateur lors du clique sur les boutons//
-    // Récupérer les éléments du DOM
-    const secondRow = document.getElementById('secondRow');
-    const thirdRow = document.getElementById('thirdRow');
-    const loadMoreBtn = document.getElementById('loadMoreBtn');
-    const showLessBtn = document.getElementById('showLessBtn');
-
-    // Ajouter un gestionnaire d'événements au bouton "Afficher plus"
-    loadMoreBtn.addEventListener('click', function () {
-      secondRow.classList.remove('d-none');
-      thirdRow.classList.remove('d-none');
-      loadMoreBtn.classList.add('d-none');
-      showLessBtn.classList.remove('d-none');
-    });
-
-    // Ajouter un gestionnaire d'événements au bouton "Afficher moins"
-    showLessBtn.addEventListener('click', function () {
-      secondRow.classList.add('d-none');
-      thirdRow.classList.add('d-none');
-      loadMoreBtn.classList.remove('d-none');
-      showLessBtn.classList.add('d-none');
-    });
-  </script>
-  <!--Partie Script en Java Script permettant d'afficher plus ou moins selon la demande l'utilisateur lors du clique sur les boutons-->
-  </div>
-  </div>
+</div>
 </body>
 <foot>
-  <nav>
-    <div class="d-flex justify-content-end align-items-center">
-      <a id="arrow-up" class="me-5">
-        <i class="fa-solid fa-arrow-up fa-beat fa-2xl"
-          style="color: #970747;"></i><!--Flêche à droite permettant de remonter en haut de la page-->
-      </a>
+  <footer class="fixed-bottom">
+    <div class="container-fluid footer">
+      <!-- Contenu de votre footer -->
+      <div class="d-flex justify-content-center align-items-center">
+        <a class="mx-5"><i class="fa-brands fa-instagram fa-fade" style="color: #970747;font-size: 100px;"></i></a>
+        <a class="mx-5"><i class="fa-brands fa-pinterest fa-fade" style="color: #970747;font-size:100px;"></i></a>
+        <a class="mx-5"><i class="fa-brands fa-twitter fa-fade" style="color: #970747;font-size:100px;"></i></a>
+        <a class="mx-5"><i class="fa-brands fa-linkedin fa-fade" style="color: #970747;font-size:100px;"></i></a>
+        <a class="mx-5"><i class="fa-brands fa-facebook fa-fade" style="color: #970747;font-size: 100px;"></i></a>
+        <a class="mx-5"><i class="fa-brands fa-youtube fa-fade" style="color: #970747;font-size:100px"></i></a>
+      </div>
     </div>
-  </nav>
-  <!--Partie Script pour la flêche-->
-  <script>
-    document.getElementById('arrow-up').addEventListener('click', function () {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    });
-  </script>
-  <!--fin de la partie Script pour la flêche-->
-  <div class="d-flex justify-content-center align-items-center">
-    <!--Début de la partie Réseaux Sociaux-->
-    <a class="mx-5"><i class="fa-brands fa-instagram fa-fade" style="color: #970747;font-size: 100px;"></i></a>
-    <a class="mx-5"><i class="fa-brands fa-pinterest fa-fade" style="color: #970747;font-size:100px;"></i></a>
-    <a class="mx-5"><i class="fa-brands fa-twitter fa-fade" style="color: #970747;font-size:100px;"></i></a>
-    <a class="mx-5"><i class="fa-brands fa-linkedin fa-fade" style="color: #970747;font-size:100px;"></i></a>
-    <a class="mx-5"><i class="fa-brands fa-facebook fa-fade" style="color: #970747;font-size: 100px;"></i></a>
-    <a class="mx-5"><i class="fa-brands fa-youtube fa-fade" style="color: #970747;font-size:100px"></i></a>
-  </div><!--Fin de la partie Réseaux Sociaux-->
+  </footer>
 </foot>
 
 </html>

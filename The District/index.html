@@ -18,7 +18,6 @@
 </head>
 
 <body>
-  <div class="para-bg">
     <header><!--Début du header pour la partie Layout(entete) -->
       <nav class="color navbar navbar-expand-lg bg-danger rounded custom-rounded "><!--Début de la NavBar Bootstrap-->
         <div class="container-fluid">
@@ -59,77 +58,26 @@
         </div>
       </nav><!--Fin de la NavBar-->
     </header><!--Fin du header pour la partie Layout(entete) -->
-    <br>
-    <div class="d-flex justify-content-center col-nav"><!--Début de la partie Carousel-->
-      <div class="row">
-        <div class="col">
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/images_the_district/bg.jpg" class="d-block" alt="..." style="width:900px;height:450px;">
-              </div>
-              <div class="carousel-item">
-                <img src="/images_the_district/bg1.jpeg" class="d-block" alt="..." style="width:900px;height:450px;">
-              </div>
-              <div class="carousel-item">
-                <img src="/images_the_district/bg2.jpeg" class="d-block" alt="..." style="width:900px;height:450px;">
-              </div>
-              <div class="carousel-item">
-                <img src="/images_the_district/bg3.jpeg" class="d-block" alt="..." style="width:900px;height:450px;">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!--Fin de la partie Carousel-->
-    <br>
     <button class="navbar-toggler color-btn" type="button" data-bs-toggle="collapse"
       data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
       aria-label="Toggle navigation">
       <span class="navbar-toggler-icon text-primary"></span>
     </button>
-    <div class="d-flex justify-content-center align-items-center col-nav carousel-item">
-      <!--Corps de la page avec le slogan ainsi que quelques images-->
-      <ul class="nav-link colslog "><u class="fs-1"><b>Large choix sur vos produits ! </b></u>
-        <p class="fs-4">Bienvenue dans l'ère culinaire de The District : une fusion exquise de
-          saveurs rapides et de satisfaction gourmande, où chaque bouchée vous transporte vers un monde de délices.</p>
-      </ul>
-      <a class="mx-5"><img src="/images_the_district/burger.jpg" class="d-block" alt="..."
-          style="width:250px;height:250px;"></a>
-      <a class="mx-5"><img src="/images_the_district/pizza.jpg" class="d-block" alt="..."
-          style="width:250px;height:250px;"></a>
-    </div><!--Corps de la page avec le slogan ainsi que quelques images-->
-    <br>
-  </div>
 </body>
 <foot>
-  <nav>
-    <div class="d-flex justify-content-end align-items-center">
-      <a id="arrow-up" class="me-5">
-        <i class="fa-solid fa-arrow-up fa-beat fa-2xl"
-          style="color: #970747;"></i><!--Flêche à droite permettant de remonter en haut de la page-->
-      </a>
+  <footer class="fixed-bottom">
+    <div class="container-fluid footer">
+      <!-- Contenu de votre footer -->
+      <div class="d-flex justify-content-center align-items-center">
+        <a class="mx-5"><i class="fa-brands fa-instagram fa-fade" style="color: #970747;font-size: 100px;"></i></a>
+        <a class="mx-5"><i class="fa-brands fa-pinterest fa-fade" style="color: #970747;font-size:100px;"></i></a>
+        <a class="mx-5"><i class="fa-brands fa-twitter fa-fade" style="color: #970747;font-size:100px;"></i></a>
+        <a class="mx-5"><i class="fa-brands fa-linkedin fa-fade" style="color: #970747;font-size:100px;"></i></a>
+        <a class="mx-5"><i class="fa-brands fa-facebook fa-fade" style="color: #970747;font-size: 100px;"></i></a>
+        <a class="mx-5"><i class="fa-brands fa-youtube fa-fade" style="color: #970747;font-size:100px"></i></a>
+      </div>
     </div>
-  </nav>
-  <!--Partie Script pour la flêche-->
-  <script>
-    document.getElementById('arrow-up').addEventListener('click', function () {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    });
-  </script>
-  <!--fin de la partie Script pour la flêche-->
-  <div class="d-flex justify-content-center align-items-center">
-    <!--Début de la partie Réseaux Sociaux-->
-    <a class="mx-5"><i class="fa-brands fa-instagram fa-fade" style="color: #970747;font-size: 100px;"></i></a>
-    <a class="mx-5"><i class="fa-brands fa-pinterest fa-fade" style="color: #970747;font-size:100px;"></i></a>
-    <a class="mx-5"><i class="fa-brands fa-twitter fa-fade" style="color: #970747;font-size:100px;"></i></a>
-    <a class="mx-5"><i class="fa-brands fa-linkedin fa-fade" style="color: #970747;font-size:100px;"></i></a>
-    <a class="mx-5"><i class="fa-brands fa-facebook fa-fade" style="color: #970747;font-size: 100px;"></i></a>
-    <a class="mx-5"><i class="fa-brands fa-youtube fa-fade" style="color: #970747;font-size:100px"></i></a>
-  </div><!--Fin de la partie Réseaux Sociaux-->
+  </footer>
 </foot>
 
 </html>
