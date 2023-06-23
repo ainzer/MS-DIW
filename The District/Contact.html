@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -12,18 +12,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" /><!--CDN Font-awesome-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script><!--CDN Bootstrap/JS-->
-  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </head>
 
 <body>
   <header><!--Début du header pour la partie Layout(entete) -->
     <nav class="color navbar navbar-expand-lg bg-danger rounded custom-rounded "><!--Début de la NavBar Bootstrap-->
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="logo" src="/images_the_district/the_district_brand/logo.png"
-            alt="logo" title="logo"></a>
+        <a class="navbar-brand"><img class="logo" src="/images_the_district/the_district_brand/logo.png" alt="logo"
+            title="logo"></a>
         <ul class="col-3 nav-link col-title fs-1"><u><b>The District</b></u></ul>
         <button class="navbar-toggler color-btn" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -33,17 +29,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link custom-heading active fs-1" aria-current="page"
+              <a class="nav-link color-heading active fs-1" aria-current="page"
                 href="/The District/index.html">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link custom-heading active fs-1" href="/The District/Categorie.html">Catégorie</a>
+              <a class="nav-link color-heading active fs-1" href="/The District/Categorie.html">Catégorie</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link custom-heading active fs-1" href="/The District/Contact.html">Contact</a>
+              <a class="nav-link color-heading active fs-1" href="/The District/Contact.html">Contact</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle custom-heading active fs-1" href="#" role="button"
+              <a class="nav-link dropdown-toggle color-heading active fs-1" href="#" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">Plats</a>
               <ul class="dropdown-menu custom-heading" aria-labelledby="menudropdown">
               </ul>
@@ -59,23 +55,45 @@
       </div>
     </nav><!--Fin de la NavBar-->
   </header><!--Fin du header pour la partie Layout(entete) -->
-</body>
-<foot>
-  <footer class="fixed-bottom">
-    <div class="container-fluid footer">
-      <!-- Contenu de votre footer -->
-      <div class="d-flex justify-content-center align-items-center">
-        <a class="mx-5"><i class="fa-brands fa-instagram fa-fade" style="color: #970747;font-size: 100px;"></i></a>
-        <a class="mx-5"><i class="fa-brands fa-pinterest fa-fade" style="color: #970747;font-size:100px;"></i></a>
-        <a class="mx-5"><i class="fa-brands fa-twitter fa-fade" style="color: #970747;font-size:100px;"></i></a>
-        <a class="mx-5"><i class="fa-brands fa-linkedin fa-fade" style="color: #970747;font-size:100px;"></i></a>
-        <a class="mx-5"><i class="fa-brands fa-facebook fa-fade" style="color: #970747;font-size: 100px;"></i></a>
-        <a class="mx-5"><i class="fa-brands fa-youtube fa-fade" style="color: #970747;font-size:100px"></i></a>
+  <br>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/images_the_district/bg1.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/images_the_district/bg2.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/images_the_district/bg3.jpeg" class="d-block w-100" alt="...">
       </div>
     </div>
-  </footer>
-  <!-- Ajoutez ici les liens JavaScript de Bootstrap -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </div>
+  <br>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script><!--CDN Bootstrap/JS-->
+</body>
+<br>
+<foot>
+  <div class="container-fluid footer">
+    <!-- Contenu de votre footer -->
+    <div class="d-flex justify-content-center align-items-center">
+      <a class="mx-3 mx-md-5 taille-rs"><i class="fa-brands fa-instagram fa-fade"
+          style="color: #970747;font-size: 100px;"></i></a>
+      <a class="mx-3 mx-md-5 taille-rs"><i class="fa-brands fa-pinterest fa-fade"
+          style="color: #970747;font-size: 100px;"></i></a>
+      <a class="mx-3 mx-md-5 taille-rs"><i class="fa-brands fa-twitter fa-fade"
+          style="color: #970747;font-size: 100px;"></i></a>
+      <a class="mx-3 mx-md-5 taille-rs"><i class="fa-brands fa-linkedin fa-fade"
+          style="color: #970747;font-size: 100px;"></i></a>
+      <a class="mx-3 mx-md-5 taille-rs"><i class="fa-brands fa-facebook fa-fade"
+          style="color: #970747;font-size: 100px;"></i></a>
+      <a class="mx-3 mx-md-5 taille-rs"><i class="fa-brands fa-youtube fa-fade"
+          style="color: #970747;font-size: 100px;"></i></a>
+    </div>
+  </div>
 </foot>
+
 
 </html>
