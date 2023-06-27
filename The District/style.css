@@ -142,6 +142,7 @@
   }
 
   .card {
+    margin: 0 auto;
     height: 250px;
     width: 250px;
     border-radius: 25px;
@@ -175,6 +176,18 @@
   transform: scale(1.1);
 }
 
+.hidden-category {
+  display: none !important;
+}
+
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 20px;
+}
+
   /* Styles pour la version mobile */
   @media (max-width: 768px) {
     .logo {
@@ -200,7 +213,13 @@
     }
 
     .mod-rs {
-      color: #970747 !important;
+      color: #FEF4E8 !important;
       font-size: 60px !important;
+    }
+
+    .footer {
+      width: 600px;
+      background-color: #970747;
+      border-radius: 25px;
     }
   }

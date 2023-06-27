@@ -114,19 +114,38 @@
   </div>
   <div class="container mt-5">
     <div class="row">
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4 col-md-6 hidden-category">
         <div class="card">
           <img src="/images_the_district/category/veggie_cat.jpg" class="card-img img-fluid zoom-image"
             alt="Category 1">
         </div>
       </div>
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4 col-md-6 hidden-category">
         <div class="card">
           <img src="/images_the_district/category/wrap_cat.jpg" class="card-img img-fluid zoom-image" alt="Category 1">
         </div>
       </div>
     </div>
   </div>
+  <div class="centered-container">
+    <div class="text-center mt-3">
+      <button id="afficher-plus-btn" class="btn btn-primary mod-btn">Afficher plus</button>
+    </div>
+  </div>
+  
+
+  <script>
+    const afficherPlusBtn = document.getElementById('afficher-plus-btn');
+    const hiddenCategories = document.querySelectorAll('.hidden-category');
+  
+    afficherPlusBtn.addEventListener('click', function() {
+      hiddenCategories.forEach(function(category) {
+        category.classList.remove('hidden-category');
+      });
+      afficherPlusBtn.style.display = 'none'; // Masquer le bouton après avoir affiché toutes les catégories
+    });
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script><!--CDN Bootstrap/JS-->
@@ -136,18 +155,12 @@
   <div class="container-fluid footer">
     <!-- Contenu de votre footer -->
     <div class="d-flex justify-content-center align-items-center">
-      <a class="mx-3 mx-md-5 taille-rs"><i class="fa-brands fa-instagram fa-fade"
-          style="color: #970747;font-size: 100px;"></i></a>
-      <a class="mx-3 mx-md-5 taille-rs"><i class="fa-brands fa-pinterest fa-fade"
-          style="color: #970747;font-size: 100px;"></i></a>
-      <a class="mx-3 mx-md-5 taille-rs"><i class="fa-brands fa-twitter fa-fade"
-          style="color: #970747;font-size: 100px;"></i></a>
-      <a class="mx-3 mx-md-5 taille-rs"><i class="fa-brands fa-linkedin fa-fade"
-          style="color: #970747;font-size: 100px;"></i></a>
-      <a class="mx-3 mx-md-5 taille-rs"><i class="fa-brands fa-facebook fa-fade"
-          style="color: #970747;font-size: 100px;"></i></a>
-      <a class="mx-3 mx-md-5 taille-rs"><i class="fa-brands fa-youtube fa-fade"
-          style="color: #970747;font-size: 100px;"></i></a>
+      <a class="mx-3 mx-md-5 mod-rs"><i class="fa-brands fa-instagram fa-fade"></i></a>
+      <a class="mx-3 mx-md-5 mod-rs"><i class="fa-brands fa-pinterest fa-fade"></i></a>
+      <a class="mx-3 mx-md-5 mod-rs"><i class="fa-brands fa-twitter fa-fade"></i></a>
+      <a class="mx-3 mx-md-5 mod-rs"><i class="fa-brands fa-linkedin fa-fade"></i></a>
+      <a class="mx-3 mx-md-5 mod-rs"><i class="fa-brands fa-facebook fa-fade"></i></a>
+      <a class="mx-3 mx-md-5 mod-rs"><i class="fa-brands fa-youtube fa-fade"></i></a>
     </div>
   </div>
 </foot>
