@@ -42,6 +42,8 @@
               <a class="nav-link dropdown-toggle color-heading active fs-1" href="#" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">Plats</a>
               <ul class="dropdown-menu custom-heading" aria-labelledby="menudropdown">
+                <li><a class="dropdown-item" href="#">Asian Food</a></li>
+                <li><a class="dropdown-item" href="/The District/">Burger</a></li>
               </ul>
             </li>
           </ul>
@@ -76,17 +78,26 @@
         <div class="card">
           <img src="/images_the_district/category/asian_food_cat.jpg" class="card-img img-fluid zoom-image"
             alt="Category 1">
+          <div class="card-body">
+            <h5 class="card-title">Asian Food</h5>
+          </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="card">
           <img src="/images_the_district/category/burger_cat.jpg" class="card-img img-fluid zoom-image"
             alt="Category 1">
+          <div class="card-body">
+            <h5 class="card-title">Burger</h5>
+          </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="card">
           <img src="/images_the_district/category/pasta_cat.jpg" class="card-img img-fluid zoom-image" alt="Category 1">
+          <div class="card-body">
+            <h5 class="card-title">Pasta</h5>
+          </div>
         </div>
       </div>
     </div>
@@ -96,18 +107,27 @@
       <div class="col-lg-4 col-md-6">
         <div class="card">
           <img src="/images_the_district/category/pizza_cat.jpg" class="card-img img-fluid zoom-image" alt="Category 1">
+          <div class="card-body">
+            <h5 class="card-title">Pizza</h5>
+          </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="card">
           <img src="/images_the_district/category/salade_cat.jpg" class="card-img img-fluid zoom-image"
             alt="Category 1">
+          <div class="card-body">
+            <h5 class="card-title">Salade</h5>
+          </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
         <div class="card">
           <img src="/images_the_district/category/sandwich_cat.jpg" class="card-img img-fluid zoom-image"
             alt="Category 1">
+          <div class="card-body">
+            <h5 class="card-title">Sandwich</h5>
+          </div>
         </div>
       </div>
     </div>
@@ -116,13 +136,10 @@
     <div class="row">
       <div class="col-lg-4 col-md-6 hidden-category">
         <div class="card">
-          <img src="/images_the_district/category/veggie_cat.jpg" class="card-img img-fluid zoom-image"
-            alt="Category 1">
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 hidden-category">
-        <div class="card">
           <img src="/images_the_district/category/wrap_cat.jpg" class="card-img img-fluid zoom-image" alt="Category 1">
+          <div class="card-body">
+            <h5 class="card-title">Wrap</h5>
+          </div>
         </div>
       </div>
     </div>
@@ -132,14 +149,14 @@
       <button id="afficher-plus-btn" class="btn btn-primary mod-btn">Afficher plus</button>
     </div>
   </div>
-  
+
 
   <script>
     const afficherPlusBtn = document.getElementById('afficher-plus-btn');
     const hiddenCategories = document.querySelectorAll('.hidden-category');
-  
-    afficherPlusBtn.addEventListener('click', function() {
-      hiddenCategories.forEach(function(category) {
+
+    afficherPlusBtn.addEventListener('click', function () {
+      hiddenCategories.forEach(function (category) {
         category.classList.remove('hidden-category');
       });
       afficherPlusBtn.style.display = 'none'; // Masquer le bouton après avoir affiché toutes les catégories
