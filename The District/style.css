@@ -7,19 +7,19 @@
   }
   
   .color-btn {
-    color: #FEF4E8;
-    background-color: #FEF4E8;
-    border-color: #FEF4E8;
-    border-radius: 0 25px;
-    border-width: 5px;
+    color: #FEF4E8 !important;
+    background-color: #FEF4E8 !important;
+    border-color: #FEF4E8 !important;
+    border-radius: 0 25px !important;
+    border-width: 5px !important; 
   }
   
   .col-search {
     background-color: #FEF4E8 !important;
     color: #970747 !important;
     border-color: #000000 !important;
-    border-width: 3px;
-    border-radius: 25px;
+    border-width: 3px !important;
+    border-radius: 25px !important;
   }
   
   .col-search:hover {
@@ -32,22 +32,40 @@
     color: #FEF4E8 !important;
     background-color: #970747 !important;
     background: #970747 !important;
-    border-color: #970747 !important;
+    border-radius: 25px;
   }
   
   .color-heading:hover {
     background-color: #FEF4E8 !important;
     color: #970747 !important;
-    border-color: #000000 !important;
-    border-width: 3px;
+    border-radius: 25px;
   }
+
+  .col-heading {
+    background-color: #970747 !important;
+    border-color: #000000 !important;
+    border-width: 3px !important;
+  }
+
+  
+  .col-plat {
+    color: #FEF4E8 !important;
+    background-color: #970747 !important;
+    text-align: center !important;
+  }
+
+  .col-plat:hover {
+    color: #970747 !important;
+    background-color: #FEF4E8 !important;
+  }
+
   
   .col-nav-text {
     background-color: #970747 !important;
     background: #970747 !important;
     border-color: #970747 !important;
     color: #FEF4E8 !important;
-    border-radius: 25px;
+    border-radius: 25px !important;
   }
   
   .col-nav {
@@ -55,16 +73,16 @@
     background: #970747 !important;
     border-color: #970747 !important;
     color: #970747 !important;
-    border-radius: 25px;
+    border-radius: 25px !important;
   }
   
   .carousel-item img {
-    height: 400px; /* Définissez la hauteur souhaitée */
-    width: 100%; /* Pour s'assurer que l'image occupe toute la largeur du carrousel */
-    object-fit: cover; /* Pour redimensionner l'image en conservant son ratio d'aspect */
-    border-radius: 25px;
-    border: 5px solid;
-    border-color: #970747;
+    height: 400px !important; /* Définissez la hauteur souhaitée */
+    width: 100% !important; /* Pour s'assurer que l'image occupe toute la largeur du carrousel */
+    object-fit: cover !important; /* Pour redimensionner l'image en conservant son ratio d'aspect */
+    border-radius: 25px !important;
+    border: 5px solid !important;
+    border-color: #970747 !important;
   }
   
   .col-title {
@@ -73,9 +91,9 @@
   
   .colslog {
     color: #FEF4E8 !important;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    margin-left: 10px !important;
   }
   
   .logo {
@@ -167,6 +185,8 @@
     width: 1200px;
     background-color: #970747;
     border-radius: 25px;
+    border: 3px solid;
+    border-color: #000000;
   }
 
   .mod-rs {
@@ -198,6 +218,13 @@
   border: 5px solid;
   border-color: #970747;
   border-radius: 25px;
+}
+
+.mod-search {
+  background-color: #FEF4E8;
+  border-color: #000000 !important;
+  border-width: 3px !important;
+  border-radius: 25px !important;
 }
 
   /* Styles pour la version mobile */
