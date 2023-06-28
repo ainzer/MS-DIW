@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-<?php
+    <hr>
+    <?php
 // Tableau associatif des mois de l'année avec le nombre de jours
 $mois = array(
     "Janvier" => 31,
@@ -19,7 +20,7 @@ $mois = array(
     "Août" => 31,
     "Septembre" => 30,
     "Octobre" => 31,
-    "Novembre" => 30,
+    "Novembre" => 30, 
     "Décembre" => 31
 );
 
@@ -44,6 +45,6 @@ foreach ($mois as $nomMois => $nbJours) {
 }
 echo "</table>";
 ?>
-
+<hr>
 </body>
 </html>

@@ -15,25 +15,19 @@
     </style>
 </head>
 <body>
+    <hr>
 <?php
 for ($i = 1; $i <= 150; $i += 2) {
     echo $i . " ";
 }
 ?>
-
-<br><hr><br>
-
+<hr>
 <?php
-$output = '';
 for ($i = 0; $i < 500; $i++) {
-    $output .= "Je dois faire des sauvegardes régulières de mes fichiers\n";
+    echo "Je dois faire des sauvegardes régulières de mes fichiers\n";
 }
-
-file_put_contents('sauvegardes.txt', $output);
 ?>
-
-<br><hr><br>
-
+<hr>
 <table>
         <tr>
             <th></th>
@@ -57,6 +51,6 @@ file_put_contents('sauvegardes.txt', $output);
         }
         ?>
     </table>
-    <br><hr><br>
+    <hr>
 </body>
 </html>
