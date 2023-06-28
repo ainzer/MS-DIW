@@ -7,32 +7,35 @@
 </head>
 <body>
     <hr>
-<?php
-// Lire le contenu du fichier dans un tableau
-$fileContent = file('fichier.txt');
+    <?php
+$file = file('fichier.txt'); // Remplacez 'liste_sites.txt' par le nom de votre fichier
 
 // Début de la construction de la page web
-$html = '<html>';
-$html .= '<head>';
-$html .= '<title>Liste de liens</title>';
-$html .= '</head>';
-$html .= '<body>';
+$html = '<html>
+<head>
+<title>Liste des sites indispensables</title>
+</head>
+<body>
+<h1>Liste des sites indispensables à la compréhension du monde moderne</h1>
+<ul>';
 
-// Construire la liste de liens hypertextes
-$html .= '<ul>';
-foreach ($fileContent as $line) {
-    $url = trim($line); // Supprimer les espaces en début et fin de ligne
-    $html .= '<li><a href="' . $url . '">' . $url . '</a></li>';
+// Parcours des lignes du fichier
+foreach ($file as $line) {
+    $line = trim($line); // Supprime les espaces en début et fin de ligne
+    $html .= '<li><a href="' . $line . '">' . $line . '</a></li>'; // Ajoute un lien hypertexte à la liste
 }
-$html .= '</ul>';
 
 // Fin de la construction de la page web
-$html .= '</body>';
-$html .= '</html>';
+$html .= '</ul>
+</body>
+</html>';
 
-// Afficher la page web
-echo $html;
+// Enregistre le contenu généré dans un fichier nommé 'liste_sites.html'
+file_put_contents('liste_sites.html', $html);
+
+echo 'Le fichier HTML a été généré avec succès !';
 ?>
+
 <hr>
 </body>
 </html>
