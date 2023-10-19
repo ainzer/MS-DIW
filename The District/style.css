@@ -254,6 +254,10 @@
     .mod-rs {
       color: #FEF4E8 !important;
       font-size: 60px !important;
+      margin-top: 1rem !important;
+      margin-bottom: 1rem !important;
+      margin-left: 1rem !important;
+      margin-right: 1rem !important;
     }
 
     .footer {
