@@ -30,8 +30,9 @@
   
   .color-heading {
     color: #FEF4E8 !important;
-    background-color: #970747 !important;
-    background: #970747 !important;
+    /* background-color: #970747 !important; */
+    /* background: #970747 !important; */
+    border-color: #000000;
     border-radius: 25px;
   }
   
